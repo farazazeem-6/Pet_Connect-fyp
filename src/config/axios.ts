@@ -1,9 +1,8 @@
 import Axios, { AxiosInstance } from 'axios';
-import { BASE_URL } from './envConfig';
 import { logger } from '@/lib/logger';
 
 export const axios: AxiosInstance = Axios.create({
-  baseURL: BASE_URL,
+  // baseURL: ,
   headers: {
     'Content-Type': 'application/json',
     Accept: 'application/json',
