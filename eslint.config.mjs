@@ -47,18 +47,6 @@ export default defineConfig([
           selector: "JSXOpeningElement[name.name='a']",
           message: 'Use <Link /> from next/link instead of <a>',
         },
-        {
-          selector: "JSXOpeningElement[name.name='div']",
-          message: 'Use a styled component instead of <div>',
-        },
-        {
-          selector: "JSXOpeningElement[name.name='h1']",
-          message: 'Use a styled component instead of <h1>',
-        },
-        {
-          selector: "JSXOpeningElement[name.name='p']",
-          message: 'Use a styled component instead of <p>',
-        },
       ],
     },
   },

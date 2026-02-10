@@ -1,5 +1,5 @@
-import { Providers } from './Providers';
 import { Metadata } from 'next';
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Pet Connect',
@@ -25,7 +25,8 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body style={{ margin: '0', padding: '0' }}>
-        <Providers>{children}</Providers>
+        {/* <Providers>{children}</Providers> */}
+        {children}
       </body>
     </html>
   );
