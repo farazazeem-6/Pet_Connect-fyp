@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -13,21 +14,21 @@ export const viewport = {
   maximumScale: 1,
 };
 
+const greycliff = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800'],
+  variable: '--font-greycliff',
+  display: 'swap',
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      style={{ fontSize: 'clamp(12px, 1vw, 16px)' }}
-      lang="en"
-      suppressHydrationWarning
-    >
-      <body style={{ margin: '0', padding: '0' }}>
-        {/* <Providers>{children}</Providers> */}
-        {children}
-      </body>
+    <html className={greycliff.variable} lang="en" suppressHydrationWarning>
+      <body>{children}</body>
     </html>
   );
 }
