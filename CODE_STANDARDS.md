@@ -148,39 +148,6 @@ import Link from "next/link";
 
 ---
 
-### 7. No Direct HTML Elements (div, h1, p, etc.)
-
-**Rule:** `no-restricted-syntax`  
-**Severity:** Error
-
-❌ **Not Allowed:**
-
-```typescript
-<div className="container">
-  <h1>Title</h1>
-  <p>Paragraph</p>
-</div>
-```
-
-✅ **Use Instead:**
-
-```typescript
-import { styled } from "@stitches/react";
-
-const Container = styled("div", { /* styles */ });
-const Title = styled("h1", { /* styles */ });
-const Text = styled("p", { /* styles */ });
-
-<Container>
-  <Title>Title</Title>
-  <Text>Paragraph</Text>
-</Container>
-```
-
-**Reason:** We use Stitches styled components for consistent styling and type-safe CSS.
-
----
-
 ## 🔧 How to Fix Issues
 
 ### Automatic Fix
@@ -210,7 +177,6 @@ Before requesting a review, ensure:
 - [ ] All imports are used
 - [ ] Using `<Image>` instead of `<img>`
 - [ ] Using `<Link>` instead of `<a>`
-- [ ] Using styled components instead of raw HTML elements
 - [ ] All ESLint checks pass locally
 
 ---
@@ -229,7 +195,6 @@ Check for:
 - Console statements
 - Unused imports
 - Missing keys in mapped elements
-- Use of raw HTML elements instead of styled components
 ```
 
 ---
