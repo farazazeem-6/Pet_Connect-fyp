@@ -35,19 +35,6 @@ export default defineConfig([
 
       // ❌ Always require semicolons
       semi: ['error', 'always'],
-
-      // ❌ Cannot use restricted HTML tags
-      'no-restricted-syntax': [
-        'error',
-        {
-          selector: "JSXOpeningElement[name.name='img']",
-          message: 'Use <Image /> from next/image instead of <img>',
-        },
-        {
-          selector: "JSXOpeningElement[name.name='a']",
-          message: 'Use <Link /> from next/link instead of <a>',
-        },
-      ],
     },
   },
 ]);
