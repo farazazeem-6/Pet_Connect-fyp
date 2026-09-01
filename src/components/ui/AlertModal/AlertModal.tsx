@@ -1,5 +1,9 @@
 import React, { type FC } from 'react';
-import { Dialog, DialogTitle, DialogDescription } from '@/components/elements/Dialog';
+import {
+  Dialog,
+  DialogTitle,
+  DialogDescription,
+} from '@/components/elements/Dialog';
 import {
   AlertDialogContent,
   IconContainer,
@@ -12,6 +16,7 @@ import {
 } from './AlertModal.style';
 import type { TAlertType } from '@/utils/types';
 import { getAlertStyles } from '@/constants';
+import { Box } from '@/components/elements';
 
 type TAlertModalProps = {
   open: boolean;
@@ -69,12 +74,12 @@ export const AlertModal: FC<TAlertModalProps> = ({
         </DialogTitle>
 
         <DialogDescription asChild>
-          <div>
+          <Box>
             <ContentWrapper hasSubtitle={!!subtitle}>
               <TitleText heading="h3">{title}</TitleText>
               {subtitle && <SubtitleText heading="h5">{subtitle}</SubtitleText>}
             </ContentWrapper>
-          </div>
+          </Box>
         </DialogDescription>
 
         {children}
