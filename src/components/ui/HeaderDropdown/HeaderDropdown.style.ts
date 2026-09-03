@@ -1,5 +1,5 @@
-import { Box, Flex } from '@/components/elements'
-import { fadeIn, styled } from '@/theme'
+import { Box, Flex } from '@/components/elements';
+import { fadeIn, styled } from '@/theme';
 
 export const UserSection = styled(Flex, {
     'defaultVariants': {
@@ -7,7 +7,7 @@ export const UserSection = styled(Flex, {
     },
     gap: '$px$10',
     cursor: 'pointer',
-})
+});
 
 export const PopoverContent = styled(Box, {
     'position': 'absolute',
@@ -25,7 +25,7 @@ export const PopoverContent = styled(Box, {
     'zIndex': 320,
     'animation': `${fadeIn} 0.25s ease`,
     'transition': 'background 0.2s ease',
-})
+});
 
 export const PopoverItem = styled(Box, {
     'padding': '$px$ $px$16',
@@ -43,4 +43,4 @@ export const PopoverItem = styled(Box, {
     '&:hover': {
         background: '$homeDropdownBg',
     },
-})
+});

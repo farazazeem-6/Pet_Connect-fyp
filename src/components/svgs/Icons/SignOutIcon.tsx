@@ -1,4 +1,4 @@
-import Svg, { SvgProps } from '../svgs'
+import Svg, { SvgProps } from '../svgs';
 
 const Icon: React.FC<SvgProps> = props => {
   return (
@@ -18,7 +18,7 @@ const Icon: React.FC<SvgProps> = props => {
       <path d="M21 12H9" />
       <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
     </Svg>
-  )
-}
+  );
+};
 
-export default Icon
+export default Icon;

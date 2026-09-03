@@ -2,7 +2,7 @@
 import React, { useCallback, useMemo, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
-import { Text, Flex, Container, CardGrid, Button } from '@/components/elements';
+import { Text, Flex, Container, CardGrid } from '@/components/elements';
 import { useAuth } from '@/hooks';
 import {
   AnimalCard,
@@ -36,7 +36,6 @@ import {
   FilterIcon,
   PawIcon,
   SearchIcon,
-  LocationIcon,
 } from '@/components/svgs';
 
 const defaultFilters: TFilterState = {

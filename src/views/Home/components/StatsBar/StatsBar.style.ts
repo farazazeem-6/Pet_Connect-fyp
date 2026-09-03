@@ -25,7 +25,7 @@ export const StatsBarContent = styled(Flex, {
   gap: '$px$30',
   boxSizing: 'border-box',
 }
-)
+);
 
 export const StatsInner = styled(Box, {
   display: 'flex',

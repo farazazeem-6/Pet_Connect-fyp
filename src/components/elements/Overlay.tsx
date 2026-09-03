@@ -1,5 +1,5 @@
-import { overlayShow } from '@/theme'
-import { styled, css } from '@/theme/stitches.config'
+import { overlayShow } from '@/theme';
+import { styled, css } from '@/theme/stitches.config';
 
 export const overlayStyles = css({
   position: 'fixed',
@@ -10,6 +10,6 @@ export const overlayStyles = css({
   width: '100vw',
   height: '100vh',
   animation: `${overlayShow} 150ms cubic-bezier(0.16, 1, 0.3, 1)`,
-})
+});
 
-export const Overlay = styled('div', overlayStyles)
+export const Overlay = styled('div', overlayStyles);

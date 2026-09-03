@@ -2,7 +2,7 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
-import { Text, Container, CardGrid } from '@/components/elements';
+import { Text, CardGrid } from '@/components/elements';
 import {
   AnimalCard,
   AnimalCardSkeleton,

@@ -1,4 +1,4 @@
-import { MOBILE_OS, MOBILE_DEVICES } from '@/constants'
+import { MOBILE_OS, MOBILE_DEVICES } from '@/constants';
 
 /**
  * Detects if the current device is a mobile device
@@ -7,22 +7,22 @@ import { MOBILE_OS, MOBILE_DEVICES } from '@/constants'
 export const isMobileDevice = (): boolean => {
   // Server-side rendering check
   if (typeof window === 'undefined' || typeof navigator === 'undefined') {
-    return false
+    return false;
   }
 
-  const ua = navigator.userAgent
+  const ua = navigator.userAgent;
 
   // Check for mobile devices in user agent
-  const hasDeviceMatch = MOBILE_DEVICES.some(device => new RegExp(device, 'i').test(ua))
+  const hasDeviceMatch = MOBILE_DEVICES.some(device => new RegExp(device, 'i').test(ua));
 
   // Check for mobile OS in user agent
-  const hasOSMatch = MOBILE_OS.some(os => new RegExp(os, 'i').test(ua))
+  const hasOSMatch = MOBILE_OS.some(os => new RegExp(os, 'i').test(ua));
 
   // Check for touch support
-  const hasTouchSupport = 'ontouchstart' in window || navigator.maxTouchPoints > 0
+  const hasTouchSupport = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
-  return hasDeviceMatch || hasOSMatch || hasTouchSupport
-}
+  return hasDeviceMatch || hasOSMatch || hasTouchSupport;
+};
 
 /**
  * Detects if the current device is a tablet
@@ -30,17 +30,17 @@ export const isMobileDevice = (): boolean => {
  */
 export const isTabletDevice = (): boolean => {
   if (typeof window === 'undefined' || typeof navigator === 'undefined') {
-    return false
+    return false;
   }
 
-  const ua = navigator.userAgent
+  const ua = navigator.userAgent;
 
   // Check for tablet-specific patterns
-  const isIPad = /iPad/i.test(ua) || (/Macintosh/i.test(ua) && navigator.maxTouchPoints > 1)
-  const isAndroidTablet = /Android/i.test(ua) && !/Mobile/i.test(ua)
+  const isIPad = /iPad/i.test(ua) || (/Macintosh/i.test(ua) && navigator.maxTouchPoints > 1);
+  const isAndroidTablet = /Android/i.test(ua) && !/Mobile/i.test(ua);
 
-  return isIPad || isAndroidTablet
-}
+  return isIPad || isAndroidTablet;
+};
 
 /**
  * Detects the type of device
@@ -48,13 +48,13 @@ export const isTabletDevice = (): boolean => {
  */
 export const getDeviceType = (): 'mobile' | 'tablet' | 'desktop' => {
   if (isTabletDevice()) {
-    return 'tablet'
+    return 'tablet';
   }
   if (isMobileDevice()) {
-    return 'mobile'
+    return 'mobile';
   }
-  return 'desktop'
-}
+  return 'desktop';
+};
 
 /**
  * Detects if the device is iOS
@@ -62,11 +62,11 @@ export const getDeviceType = (): 'mobile' | 'tablet' | 'desktop' => {
  */
 export const isIOS = (): boolean => {
   if (typeof window === 'undefined' || typeof navigator === 'undefined') {
-    return false
+    return false;
   }
 
-  return /iPhone|iPad|iPod/i.test(navigator.userAgent) || (/Macintosh/i.test(navigator.userAgent) && navigator.maxTouchPoints > 1)
-}
+  return /iPhone|iPad|iPod/i.test(navigator.userAgent) || (/Macintosh/i.test(navigator.userAgent) && navigator.maxTouchPoints > 1);
+};
 
 /**
  * Detects if the device is Android
@@ -74,8 +74,8 @@ export const isIOS = (): boolean => {
  */
 export const isAndroid = (): boolean => {
   if (typeof window === 'undefined' || typeof navigator === 'undefined') {
-    return false
+    return false;
   }
 
-  return /Android/i.test(navigator.userAgent)
-}
+  return /Android/i.test(navigator.userAgent);
+};
