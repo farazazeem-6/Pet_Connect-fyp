@@ -1,4 +1,4 @@
-import Svg, { SvgProps } from '../svgs'
+import Svg, { SvgProps } from '../svgs';
 
 const Icon: React.FC<SvgProps> = props => {
   return (
@@ -19,7 +19,7 @@ const Icon: React.FC<SvgProps> = props => {
       <circle cx="9" cy="7" r="4" />
       <polyline points="16 11 18 13 22 9" />
     </Svg>
-  )
-}
+  );
+};
 
-export default Icon
+export default Icon;

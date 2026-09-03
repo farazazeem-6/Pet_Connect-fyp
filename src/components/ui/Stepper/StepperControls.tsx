@@ -1,7 +1,6 @@
 import { useStepper } from './StepperContext';
 import {
   StepperControlsRoot,
-  StepProgress,
   ButtonGroup,
   Button,
 } from './Stepper.style';

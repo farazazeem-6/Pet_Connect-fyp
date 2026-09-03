@@ -27,4 +27,4 @@ export const FavouritesWrapper = styled(Box, {
 });
 export const FavouriteContent = styled(Box, {
 
-})
+});

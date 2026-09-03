@@ -1,4 +1,4 @@
-import { styled } from '@/theme/stitches.config'
+import { styled } from '@/theme/stitches.config';
 
 export const IconButton = styled('button', {
   'display': 'inline-flex',
@@ -203,4 +203,4 @@ export const IconButton = styled('button', {
     size: 'medium',
     color: 'default',
   },
-})
+});

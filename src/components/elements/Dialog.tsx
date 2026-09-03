@@ -24,7 +24,7 @@ const scrollStyle = {
         background: '$colors$scrollbarBackground',
         borderRadius: '$radius$20',
     },
-}
+};
 
 const Dialog = DialogPrimitive.Root;
 const DialogTrigger = DialogPrimitive.Trigger;

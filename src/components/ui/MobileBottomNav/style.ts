@@ -1,5 +1,5 @@
-import { Box } from '@/components/elements'
-import { styled } from '@/theme'
+import { Box } from '@/components/elements';
+import { styled } from '@/theme';
 
 export const MobileBottomNavContainer = styled(Box, {
     'position': 'fixed',
@@ -17,7 +17,7 @@ export const MobileBottomNavContainer = styled(Box, {
     '@sm_max': {
         display: 'block',
     },
-})
+});
 
 export const NavItem = styled(Box, {
     'display': 'flex',
@@ -50,7 +50,7 @@ export const NavItem = styled(Box, {
             true: {},
         },
     },
-})
+});
 
 export const NavItemIcon = styled(Box, {
     display: 'flex',
@@ -65,7 +65,7 @@ export const NavItemIcon = styled(Box, {
             },
         },
     },
-})
+});
 
 export const NavItemLabel = styled('span', {
     fontSize: '$px$10',
@@ -88,4 +88,4 @@ export const NavItemLabel = styled('span', {
             },
         },
     },
-})
+});

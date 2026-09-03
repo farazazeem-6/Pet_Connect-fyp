@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { NextJSImage, WebLogo } from '@/components/elements';
+import { WebLogo } from '@/components/elements';
 import { BackArrowIcon } from '@/components/svgs';
 import {
   AuthPageWrapper,

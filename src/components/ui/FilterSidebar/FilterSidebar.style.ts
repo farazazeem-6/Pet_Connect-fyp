@@ -1,6 +1,6 @@
 'use client';
 
-import { keyframes, styled } from '@/theme/stitches.config';
+import { styled } from '@/theme/stitches.config';
 import { Box } from '@/components/elements/Box';
 import { Flex } from '@/components/elements/Flex';
 import { Text } from '@/components/elements/Text';

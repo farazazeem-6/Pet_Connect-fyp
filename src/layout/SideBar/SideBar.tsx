@@ -10,7 +10,7 @@ import {
   SidebarOverlay,
   SidebarWrapper,
 } from './SideBar.Style';
-import { CloseIcon, MenuIcon } from '@/components/svgs';
+import { MenuIcon } from '@/components/svgs';
 
 export const Sidebar = ({
   isMobileMenuOpen,

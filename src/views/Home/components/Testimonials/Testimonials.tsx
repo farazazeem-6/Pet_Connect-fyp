@@ -7,9 +7,6 @@ import 'swiper/css/pagination';
 
 import {
   TestimonialsSectionWrapper,
-  TestimonialsHeading,
-  TestimonialsHeadingHighlight,
-  TestimonialsSubtitle,
   TestimonialsGrid,
   TestimonialsSwiperWrapper,
   TestimonialCard,

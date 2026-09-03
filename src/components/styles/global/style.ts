@@ -51,7 +51,7 @@ export const scrollStyle = {
         background: '$colors$scrollbarBackground',
         borderRadius: '$radius$20',
     },
-}
+};
 
 export const RoutePageWrapper = styled(Box, {
     width: '$percent$100',

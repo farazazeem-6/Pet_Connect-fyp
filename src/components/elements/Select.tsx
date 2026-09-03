@@ -2,7 +2,6 @@
 
 import * as SelectPrimitive from '@radix-ui/react-select';
 import React, { useMemo, useRef, useState } from 'react';
-import { useVirtualizer } from '@tanstack/react-virtual';
 import { ArrowIcon, CircleTickIcon } from '../svgs';
 import { Text } from './Text';
 import { Box } from './Box';

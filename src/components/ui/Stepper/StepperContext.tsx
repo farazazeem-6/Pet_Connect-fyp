@@ -3,11 +3,10 @@ import {
   useContext,
   useReducer,
   useEffect,
-  useCallback,
   ReactNode,
 } from 'react';
 import { StepConfig, StepperState, StepperAction } from '@/utils/types';
-import { stepperReducer, buildInitialState } from './stepperReducer';
+import { stepperReducer } from './stepperReducer';
 import { saveState, loadState } from './stepperPersistence';
 
 interface StepperContextValue {
