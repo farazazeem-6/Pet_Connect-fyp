@@ -2,6 +2,7 @@
 
 import DashBoardHeader from '@/components/ui/DashBoardHeader/DashBoardHeader';
 import { Text } from '@/components/elements';
+import { messages } from '@/constants/messages';
 import {
   ContactNote,
   ContentWrapper,
@@ -18,10 +19,10 @@ import {
   TocList,
   TocTitle,
 } from './style';
-import { TERMS_AND_CONDITIONS } from './messages';
 
 export const TermsConditions = () => {
-  const { heading, subHeading, intro, sections } = TERMS_AND_CONDITIONS;
+  const { termsAndConditions } = messages.website;
+  const { heading, subHeading, intro, sections } = termsAndConditions;
 
   return (
     <TermConditionsWrapper>
