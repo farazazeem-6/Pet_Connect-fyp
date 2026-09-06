@@ -1,6 +1,7 @@
 'use client';
 
 import DashBoardHeader from '@/components/ui/DashBoardHeader/DashBoardHeader';
+import { messages } from '@/constants/messages';
 import {
   AboutWrapper,
   Section,
@@ -22,33 +23,34 @@ import {
   CardTitle,
   CardRole,
 } from './style';
-import { ABOUT_US } from './messages';
 
 export const AboutUs = () => {
+  const { aboutUs } = messages.website;
+
   return (
     <AboutWrapper>
       <DashBoardHeader
-        heading={ABOUT_US.heading}
-        subHeading={ABOUT_US.subHeading}
+        heading={aboutUs.heading}
+        subHeading={aboutUs.subHeading}
       />
 
       {/* Mission Section */}
       <Section>
-        <SectionTitle>{ABOUT_US.missionTitle}</SectionTitle>
-        <SectionText>{ABOUT_US.missionText}</SectionText>
+        <SectionTitle>{aboutUs.missionTitle}</SectionTitle>
+        <SectionText>{aboutUs.missionText}</SectionText>
       </Section>
 
       {/* Story Section */}
       <Section>
-        <SectionTitle>{ABOUT_US.storyTitle}</SectionTitle>
-        <SectionText>{ABOUT_US.storyText}</SectionText>
+        <SectionTitle>{aboutUs.storyTitle}</SectionTitle>
+        <SectionText>{aboutUs.storyText}</SectionText>
       </Section>
 
       {/* Values Section */}
       <Section>
-        <SectionTitle>{ABOUT_US.valuesTitle}</SectionTitle>
+        <SectionTitle>{aboutUs.valuesTitle}</SectionTitle>
         <ValuesGrid>
-          {ABOUT_US.values.map((val) => (
+          {aboutUs.values.map((val) => (
             <ValueCard key={val.title}>
               <ValueTitle>{val.title}</ValueTitle>
               <ValueDescription>{val.description}</ValueDescription>
@@ -59,9 +61,9 @@ export const AboutUs = () => {
 
       {/* How it works Section */}
       <Section>
-        <SectionTitle>{ABOUT_US.howItWorksTitle}</SectionTitle>
+        <SectionTitle>{aboutUs.howItWorksTitle}</SectionTitle>
         <StepsGrid>
-          {ABOUT_US.howItWorksSteps.map((step) => (
+          {aboutUs.howItWorksSteps.map((step) => (
             <StepCard key={step.step}>
               <StepNumber>{step.step}</StepNumber>
               <StepContent>
@@ -75,9 +77,9 @@ export const AboutUs = () => {
 
       {/* Team Section */}
       <Section>
-        <SectionTitle>{ABOUT_US.teamTitle}</SectionTitle>
+        <SectionTitle>{aboutUs.teamTitle}</SectionTitle>
         <TeamGrid>
-          {ABOUT_US.teamMembers.map((member) => (
+          {aboutUs.teamMembers.map((member) => (
             <TeamCard key={member.name}>
               <AvatarImg src={member.avatar} alt={member.name} />
               <CardTitle>{member.name}</CardTitle>
